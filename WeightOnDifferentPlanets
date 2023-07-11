@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class WeightOnDifferentPlanets 
+{
+    public static void main(String[] args) 
+    {
+        // Ayşegül Yıldız 
+
+        // Create a scanner
+         Scanner weightScanner = new Scanner(System.in); 
+         
+         // define variables
+         double weight1;
+         double weight2;
+         double jupiter;
+         double venus;
+         double mars;
+         double saturn;
+
+         // define constants
+         jupiter = 2.34;
+         venus = 0.91;
+         mars =	0.38;
+         saturn = 1.06;
+
+         // ask user to enter data
+         System.out.print( "Enter weight of first earthling(kg): " );
+
+         // receive input
+         weight1 = weightScanner.nextInt();
+
+         // ask user to enter the second data
+         System.out.print( "Enter weight of second earthling(kg): " );
+
+         // receive second input
+         weight2 = weightScanner.nextInt();
+
+         // close scanner
+         weightScanner.close();
+
+         // print the results
+         System.out.printf( " %45s %12s %12s %12s \n", "JUPITER" , "VENUS" , "MARS" , "SATURN" );
+         System.out.printf( " %20s %5.1f %5s %12.1f %12.1f %12.1f %12.1f\n", "EARTHLING ONE (", weight1, "kg ):", jupiter * weight1, venus * weight1, mars * weight1, saturn * weight1, weight1 );
+         System.out.printf( " %20s %5.1f %5s %12.1f %12.1f %12.1f %12.1f" ,"EARTHLING TWO (", weight2, "kg ):",  jupiter * weight2, venus * weight2, mars * weight2, saturn * weight2, weight2 );
+
+    }
+}
